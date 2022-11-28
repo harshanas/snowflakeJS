@@ -25,7 +25,7 @@ class Snowflake {
         this.element.style.position = "absolute";
         this.element.style.top = Math.floor((Math.random()*(window.innerHeight / 4)-this.initRect.height)+1)+"px";
         this.element.style.left = Math.floor((Math.random()*window.innerWidth-(this.initRect.width+5))+1)+"px";
-        this.maxDown = (window.innerHeight-this.initRect.height);
+        this.maxDown = (document.body.scrollHeight-this.initRect.height);
         this.initRect = this.element.getBoundingClientRect();
         this.element.innerHTML = svg;
     }
